@@ -21,4 +21,7 @@
         <property name="customInit" value="Beanlifecycledemo.customInit()"></property>
         <property name="customDestroy" value="Beanlifecycledemo.customDestroy()"></property>
     </bean>
+    <bean id="beanPostProcessor" class="com.stackroute.spring.BeanPostProcessorDemoBean">
+        <property name="BeanPostProcessorDemoBean" value="beanPostProcessor.BeanPostProcessorDemoBean()"></property>
+    </bean>
 </beans>

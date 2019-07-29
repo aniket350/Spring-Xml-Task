@@ -23,5 +23,10 @@ public class MainClass {
         ConfigurableApplicationContext context1=new ClassPathXmlApplicationContext("beans.xml");
         BeanLifeCycleDemoBean demoBean=(BeanLifeCycleDemoBean) context1.getBean("Beanlifecycledemo",BeanLifeCycleDemoBean.class);
         context1.close();
+
+        //beanPostProcessor
+        ConfigurableApplicationContext context2 = new ClassPathXmlApplicationContext("beans.xml");
+        BeanPostProcessorDemoBean beanPostProcessorDemoBean = (BeanPostProcessorDemoBean) context2.getBean("beanpostprocessor",BeanPostProcessorDemoBean.class);
+        context2.close();
     }
 }
