@@ -13,8 +13,8 @@ public class MainClass {
         Movie movie = context.getBean("movie",Movie.class);
         System.out.println(movie.getActor());
 
-        Actor actor = context.getBean("actor",Actor.class);
-        System.out.println(actor);
+        Movie movie2 = context.getBean("movie",Movie.class);
+        System.out.println(movie2.getActor());
+        System.out.println(movie==movie2);
     }
 }
-

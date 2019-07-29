@@ -1,15 +1,21 @@
 package com.stackroute.spring.domain;
 
 import com.stackroute.spring.domain.Actor;
-public class Movie {
 
-    public Actor getActor() {
+import java.util.List;
+
+public class Movie {
+    List<Actor> actor;
+    public List<Actor> getActor() {
         return actor;
     }
 
-    public void setActor(Actor actor) {
+    public void setActor(List<Actor> actor) {
         this.actor = actor;
     }
 
-    Actor actor;
+    public Movie(List<Actor> actor) {
+        this.actor= actor;
+    }
+
 }
