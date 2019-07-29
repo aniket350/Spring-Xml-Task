@@ -6,6 +6,10 @@ import java.util.List;
 
 public class Movie {
     List<Actor> actor;
+
+    public Movie() {    
+    }
+
     public List<Actor> getActor() {
         return actor;
     }

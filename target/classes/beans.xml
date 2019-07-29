@@ -11,7 +11,10 @@
     <constructor-arg type="int" value="24"></constructor-arg>
 </bean>
 
-    <bean id="movie" class="com.stackroute.spring.domain.Movie">
-        <constructor-arg ref="actor1" name="actor"></constructor-arg>
+    <bean id="movie" class="com.stackroute.spring.domain.Movie" autowire="byName">
+       <property name="actor" ref="actor1"></property>
+    </bean>
+    <bean id="movie2" class="com.stackroute.spring.domain.Movie" autowire="byName">
+        <property name="actor" ref="actor1"></property>
     </bean>
 </beans>
