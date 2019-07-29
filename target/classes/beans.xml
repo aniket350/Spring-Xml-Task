@@ -17,4 +17,8 @@
     <bean id="movie2" class="com.stackroute.spring.domain.Movie" autowire="byName">
         <property name="actor" ref="actor1"></property>
     </bean>
+    <bean id="Beanlifecycledemo" class="com.stackroute.spring.BeanLifeCycleDemoBean" init-method="customInit" destroy-method="customDestroy">
+        <property name="customInit" value="Beanlifecycledemo.customInit()"></property>
+        <property name="customDestroy" value="Beanlifecycledemo.customDestroy()"></property>
+    </bean>
 </beans>
